@@ -40,6 +40,10 @@ struct ListNode* removeElements(struct ListNode* head, int val)
             free(fast); fast = temp;
         }
     }
+    // The node pointed to by the slow pointer is our last node.
+    // Its next pointer is still pointing at its next node, which,
+    // if not NULL, has been previously deallocated, thus resulting
+    // in a dangling pointer. Zero the pointer out.
     slow->next = NULL;
     
     return dummy.next;
