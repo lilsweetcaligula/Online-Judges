@@ -17,7 +17,8 @@
  *     struct ListNode *next;
  * };
  */
-struct ListNode* removeElements(struct ListNode* head, int val) {
+struct ListNode* removeElements(struct ListNode* head, int val) 
+{
     struct ListNode
         dummy = { .next = head },
         *slow = &dummy,
