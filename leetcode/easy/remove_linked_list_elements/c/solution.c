@@ -20,19 +20,27 @@
 struct ListNode* removeElements(struct ListNode* head, int val) 
 {
     struct ListNode
+        *temp = NULL,
         dummy = { .next = head },
         *slow = &dummy,
-        *fast = &dummy;
+        *fast = (&dummy)->next;
         
-    while (fast != NULL) {
-        if (fast->next != NULL && fast->next->val == val) {
-            fast       = fast->next;   
-        } else {
-            slow->next = fast->next;
-            fast       = fast->next;
+    while (fast != NULL)
+    {
+        if (fast->val != val) {
+            slow->next = fast;
             slow       = slow->next;
+            fast       = fast->next;
+        } else {
+            // We found the node containing the target value.
+            // De-allocate the node. Store away the pointer to
+            // the next node. Otherwise, it will be unavailable
+            // to us once we free the target node's memory.
+            temp = fast->next;
+            free(fast); fast = temp;
         }
     }
+    slow->next = NULL;
     
     return dummy.next;
 }
