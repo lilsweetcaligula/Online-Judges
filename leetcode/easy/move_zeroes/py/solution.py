@@ -11,6 +11,9 @@
 # been priorly copied, can linger. We must walk the slow pointer to the end of the
 # array and overwrite all values with 0.
 #
+# The whole approach can be reminiscent of the Lomuto partitioning algorithm:
+#   https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
+#
 
 class Solution(object):
     def moveZeroes(self, nums):
