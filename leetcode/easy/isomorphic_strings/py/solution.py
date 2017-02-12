@@ -7,8 +7,7 @@ class Solution(object):
         """
         if len(s) != len(t):
             return False
-            
-        #
+        
         # Leetcode hasn't upgraded its Python judges to 3.x, however the function
         # still receives unicode strings as parameters. str.translate method in
         # Python 2.x will not work on a unicode translation table, thus we must
