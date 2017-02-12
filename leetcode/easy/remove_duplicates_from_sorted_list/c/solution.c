@@ -7,6 +7,10 @@
  * The "slow" node is linked up to it by altering its next pointer, and
  * the slow pointer moves a step forward.
  *
+ * The reason we are not using the dummy technique here as well, is because
+ * even if the head node has duplicates, it is still a unique node in its
+ * own respect with all the duplicates deleted.
+ *
  */
 
 /**
@@ -56,6 +60,7 @@ struct ListNode* deleteDuplicates(struct ListNode* head)
     
     /* At this point the last "unique" node might still be
      * pointing at its duplicate. Zero out its next pointer.
+     */
     slow->next = NULL;
     
     return head;
