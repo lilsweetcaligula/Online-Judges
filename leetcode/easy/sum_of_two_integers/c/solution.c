@@ -45,9 +45,14 @@
  * in other words, until carry is equal to zero.
  *
  * This will not, however, work with negative numbers in languages 
- * with dynamic int types, which can grow indefinitely, such as Python.
- * This is because the sign bit will never be "reached" by the product
- * of the XOR operator, resulting in an infinite loop.
+ * with dynamic int types, which can grow indefinitely, such as 
+ * Python. This is because the sign bit will never be "reached" by
+ * the product of the XOR operator, resulting in an infinite loop.
+ *
+ * In Python, there's a way though, to get this algorithm working
+ * with the help of the ctypes library, originally designed for
+ * interop between the runtime environments of Python and C.
+ *
  */
 
 int getSum(int a, int b) 
