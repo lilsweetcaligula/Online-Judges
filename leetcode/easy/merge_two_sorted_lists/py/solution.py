@@ -17,8 +17,7 @@ class Solution(object):
         node1 = l1
         node2 = l2
         
-        while node1 != None and node2 != None:
-            
+        while node1 != None and node2 != None:            
             if node1.val < node2.val:
                 dest.next = node1
                 node1     = node1.next
