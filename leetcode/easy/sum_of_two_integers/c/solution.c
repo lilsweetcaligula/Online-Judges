@@ -44,6 +44,10 @@
  * product and rinse, repeat until we no longer have a carry, or
  * in other words, until carry is equal to zero.
  *
+ * This will not, however, work with negative numbers in languages 
+ * with dynamic int types, which can grow indefinitely, such as Python.
+ * This is because the sign bit will never be "reached" by the product
+ * of the XOR operator, resulting in an infinite loop.
  */
 
 int getSum(int a, int b) 
