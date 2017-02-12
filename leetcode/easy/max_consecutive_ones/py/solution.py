@@ -8,8 +8,8 @@ class Solution(object):
         
         maxcount = 0
         
-        for label, group in itertools.groupby(nums):
-            if label == 1:
+        for bit, group in itertools.groupby(nums):
+            if bit == 1:
                 maxcount = max(maxcount, len(tuple(group)))
                 
         return maxcount
