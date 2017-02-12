@@ -49,8 +49,8 @@ struct ListNode* deleteDuplicates(struct ListNode* head)
             slow       = slow->next;
             fast       = fast->next;
         } else {
-            /* Store away the address of the next node and
-             * free the memory occupied by the duplicate node.
+            /* Store away the address of the next node and free
+             * the memory occupied by the duplicate node.
              */             
             fast->next = temp;
             free(fast);
