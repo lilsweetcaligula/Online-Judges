@@ -17,6 +17,6 @@ class Solution(object):
         return (    t == s.translate({ ord(frm): ord(to) for frm, to in zip(s, t)})
                 and s == t.translate({ ord(frm): ord(to) for frm, to in zip(t, s)}))
                 
-        # A cleaner Py3 solution would be:
+        # A cleaner Python 3.x solution would be:
         #
         # return t == s.translate(str.maketrans(s, t)) and s == t.translate(str.maketrans(t, s))
