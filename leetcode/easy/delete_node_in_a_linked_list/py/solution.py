@@ -13,6 +13,8 @@ class Solution(object):
         while node.next != None:
             node.next.val, node.val = node.val, node.next.val
             
+            # Is node the penultimate node? If it is, zero out its next
+            # pointer.
             if node.next.next == None:
                 node.next = None
             else:
