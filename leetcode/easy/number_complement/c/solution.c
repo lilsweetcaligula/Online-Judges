@@ -2,13 +2,13 @@
 
 int findComplement(int num)
 {
-    unsigned result = 0;
+    unsigned mask = 0;
+    unsigned bit  = 1;
     
-    for (unsigned bit = 1; (bit & INT_MAX) && (bit <= num); bit <<= 1) {
-        if (!(num & bit)) {
-            result |= bit;
-        }
+    while (bit <= (unsigned)num) {
+        mask  = (mask << 1) | 1;
+        bit <<= 1;
     }
     
-    return (int)result;
+    return (~num) & mask;
 }
