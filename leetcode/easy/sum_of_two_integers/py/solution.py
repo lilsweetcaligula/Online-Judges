@@ -1,5 +1,5 @@
 #
-# The problem spec requires that we are not allowed to use the "+" and or "-" operators.
+# The problem spec states that we are not allowed to use the "+" and or "-" operators.
 # But no one said anything about the built-in "sum" function. ;)
 #
 
