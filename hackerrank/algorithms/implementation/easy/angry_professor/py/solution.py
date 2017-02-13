@@ -3,12 +3,7 @@
 import sys
 
 def isClassCancelled(arrivalTimes, cancellationThreshold):
-    count = 0
-    
-    for arrivalTime in arrivalTimes:        
-        if arrivalTime <= 0:
-            count += 1
-            
+    count = len(tuple(arrivalTime for arrivalTime in arrivalTimes if arrivalTime <= 0))            
     return count < cancellationThreshold
 
 t = int(input())
