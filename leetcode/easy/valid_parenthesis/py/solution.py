@@ -14,8 +14,7 @@ class Solution(object):
         
         stack = []
         
-        for c in s:
-            
+        for c in s:            
             if c in LPARENS:
                 stack.append(c)
                 
