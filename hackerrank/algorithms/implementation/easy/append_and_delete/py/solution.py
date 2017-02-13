@@ -33,7 +33,7 @@ def canConvert(s, t, k):
     
 s = input().strip()
 t = input().strip()
-k = int(input().strip())
+k = int(input())
 
 if canConvert(s, t, k):
     print('Yes')
