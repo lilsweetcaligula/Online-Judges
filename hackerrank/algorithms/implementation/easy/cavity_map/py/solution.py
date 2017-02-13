@@ -32,9 +32,10 @@ def findCavities(lookup):
 
     return result
 
-n = int(input().strip())
-grid = []
+n      = int(input().strip())
+grid   = []
 grid_i = 0
+
 for grid_i in range(n):
    grid_t = tuple(map(int, input().strip()))
    grid.append(grid_t)
