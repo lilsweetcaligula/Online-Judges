@@ -8,8 +8,7 @@ class NumArray(object):
         total      = 0
         
         for num in nums:
-            total += num
-            
+            total += num            
             self._sums.append(total)
 
     def sumRange(self, i, j):
