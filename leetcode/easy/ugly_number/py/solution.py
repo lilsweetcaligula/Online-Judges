@@ -7,9 +7,8 @@ class Solution(object):
         if num < 1:
             return False
     
-        bad_factors = (2, 3, 5)
-    
-        stack = [num]
+        bad_factors = (2, 3, 5, )    
+        stack       = [num]
     
         while len(stack) > 0:
             x = stack.pop()
