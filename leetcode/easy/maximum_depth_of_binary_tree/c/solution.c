@@ -7,9 +7,9 @@
  * };
  */
  
- static int max(int a, int b);
+static int max(int a, int b);
  
- static int maxDepthHelper(const struct TreeNode *root, int depth);
+static int maxDepthHelper(const struct TreeNode *root, int depth);
  
 int maxDepth(struct TreeNode* root) 
 {
