@@ -6,12 +6,27 @@ int lengthOfLastWord(char* s)
     const char *end = &s[strlen(s)];
     int count       = 0;
     
-    while (end >= s && isspace(*--end)) {
+    if (!*s) {
+        return 0;
+    }
+    
+    while (end > s && isspace(*--end)) {
         continue;
     }
     
-    while (end >= s && !isspace(*end--)) {
-        ++count;
+    while (true) 
+    {
+        if (!isspace(*end)) {
+            ++count;
+        } else {
+            break;   
+        }
+        
+        if (end == s) {
+            break;
+        } else {
+            --end;   
+        }
     }
     
     return count;
