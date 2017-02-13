@@ -15,7 +15,7 @@ def solution(n, c, m):
 
     return cnt
 
-t = int(input().strip())
+t = int(input())
 
 for a0 in range(t):    
     n, c, m = map(int, input().split(' '))
