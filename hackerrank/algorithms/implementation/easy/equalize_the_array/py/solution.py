@@ -10,7 +10,6 @@ def solution(nums):
 
 n    = int(input())
 nums = tuple(map(int, input().split()))
-
 cnt  = solution(nums)
 
 print(cnt)
