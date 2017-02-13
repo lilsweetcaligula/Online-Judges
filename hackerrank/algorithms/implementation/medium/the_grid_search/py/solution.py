@@ -16,8 +16,8 @@ def solution(grid, pattern):
             offset = grid[i].find(pattern[0], offset + 1)
 
         for offset in offsets:
-            k         = i
-            j         = 0
+            k = i
+            j = 0
 
             while j < len(pattern):
                 curoffset = grid[k].find(pattern[j], offset)
