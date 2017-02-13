@@ -4,7 +4,7 @@ import sys
 
 DEBUG   = False
 
-nums    = list(map(int, input().strip().split(' ')))
+nums    = map(int, input().strip().split(' '))
 
 if DEBUG:
   assert(len(nums) == 5)
