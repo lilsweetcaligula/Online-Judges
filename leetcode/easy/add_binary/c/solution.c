@@ -41,7 +41,8 @@ char* addBinary(char* left, char* right)
         
         *presult = '\0';
         
-        for (char *begin = buffer, *end = presult; begin < end--; ++begin) {
+        for (char *begin = buffer, *end = presult; begin < end--; ++begin) 
+        {
             const char temp = *begin;
             
             *begin = *end;
