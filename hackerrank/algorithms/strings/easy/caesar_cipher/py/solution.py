@@ -18,8 +18,7 @@ def solution(s, k):
         return string.ascii_lowercase[(len(string.ascii_lowercase) + k + (ord(letter) - ord('a'))) % len(string.ascii_lowercase)]
         
         
-    return ''.join(shiftLetter(c, k) if c.isalpha() else c for c in s)
-        
+    return ''.join(shiftLetter(c, k) if c.isalpha() else c for c in s)        
 
 n = int(input())
 s = input().strip()
