@@ -2,7 +2,13 @@
 
 import sys
 
-cmp         = lambda a, b: (a > b) - (b > a)
+# The cmp function has been removed from Python 3.x so we define it here
+# ourselves.
+# [href.] https://docs.python.org/3.0/whatsnew/3.0.html#ordering-comparisons
+#   "If you really need the cmp() functionality, you could use the expression 
+#    (a > b) - (a < b) as the equivalent for cmp(a, b)."
+#
+cmp         = lambda a, b: (a > b) - (a < b)
 
 aliceScores = tuple(map(int, input().strip().split(' ')))
 bobScores   = tuple(map(int, input().strip().split(' ')))
