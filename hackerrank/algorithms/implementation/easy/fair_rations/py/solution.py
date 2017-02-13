@@ -13,10 +13,10 @@ def solution(b):
 
             if i < len(b) - 1:
                 b[i + 1] += 1
-                count += 1
+                count    += 1
             elif i > 0:
                 b[i - 1] += 1
-                count += 1
+                count    += 1
 
     if any(x % 2 for x in b):
         return None
