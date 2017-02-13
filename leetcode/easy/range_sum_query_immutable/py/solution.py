@@ -3,8 +3,7 @@ class NumArray(object):
     def __init__(self, nums):
         """
         :type nums: List[int]
-        """
-        
+        """        
         self._sums = [0]
         total      = 0
         
