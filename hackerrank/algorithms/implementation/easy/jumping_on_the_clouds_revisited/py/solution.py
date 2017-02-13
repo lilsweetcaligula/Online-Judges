@@ -7,10 +7,8 @@ PENALTY_JUMP        = 1
 
 e    = 100
 
-n, k = input().strip().split(' ')
-n, k = [int(n),int(k)]
-c    = [int(c_temp) for c_temp in input().strip().split(' ')]
-
+n, k = map(int, input().split())
+c    = tuple(map(int, input().split()))
 i    = 0
 
 while True:
