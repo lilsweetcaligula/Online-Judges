@@ -26,7 +26,7 @@ int main(void)
         }
     }
     
-    int diff = abs(sum2 - sum1);
+    const int diff = abs(sum2 - sum1);
     printf("%d\n", diff);
     
     return 0;
