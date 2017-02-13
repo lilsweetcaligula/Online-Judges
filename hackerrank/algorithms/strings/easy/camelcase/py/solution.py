@@ -2,14 +2,10 @@
 
 import sys
 
-def camelCaseWordCount(s):    
-    count = 0
-    
-    if not s[0].isupper():
-        count += 1
-        
-    return count + len([char for char in s if char.isupper()])
+def camelCaseWordCount(s):
+    return 1 + len([c for c in s if c.isupper()])
 
-s = input().strip()
+s     = input().strip()
+count = camelCaseWordCount(s)
 
-print(camelCaseWordCount(s))
+print(count)
