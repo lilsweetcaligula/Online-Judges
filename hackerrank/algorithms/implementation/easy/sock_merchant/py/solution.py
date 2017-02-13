@@ -3,8 +3,8 @@
 import sys
 import collections
 
-n = int(input().strip())
-c = map(int, input().strip().split(' '))
+n = int(input())
+c = map(int, input().split(' '))
 
 pairCount = sum(count // 2 for count in collections.Counter(c).values())
 
