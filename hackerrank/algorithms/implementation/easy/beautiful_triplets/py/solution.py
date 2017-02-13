@@ -3,8 +3,8 @@ def beau(vals, diff):
     result = []
 
     for x in vals:
-        if x - d in lookup and x + d in lookup:
-            result.append((x - d, x, x + d))
+        if x - diff in lookup and x + diff in lookup:
+            result.append((x - diff, x, x + diff))
 
     return result
 
