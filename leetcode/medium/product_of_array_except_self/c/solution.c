@@ -31,7 +31,7 @@ int* productExceptSelf(int* nums, int numsSize, int* returnSize)
 	        * right in another one.
 	        */            
                 for (int index = 0, product = 1; index < numsSize; ++index) {
-                    product          *= nums[index];
+                    product         *= nums[index];
                     leftprods[index] = product;                    
                 }
 
@@ -39,7 +39,7 @@ int* productExceptSelf(int* nums, int numsSize, int* returnSize)
                 * Accumulate products from right to left.
                 */
                 for (int index = 0, product = 1; index < numsSize; ++index) {
-                    product                          *= nums[numsSize - index - 1];
+                    product                         *= nums[numsSize - index - 1];
                     rightprods[numsSize - index - 1] = product;
                 }
 
