@@ -16,7 +16,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize)
 
       for (int index = digitsSize - 1; index >= 0; --index)
       {
-        int sum = digits[index] + carry;
+        const int sum = digits[index] + carry;
 
         if (index == digitsSize - 1) sum += 1;
 
