@@ -31,8 +31,8 @@ char *intToString(int value, char *buffer)
 char** fizzBuzz(int n, int* returnSize) 
 {
     /* Do not move these strings from the stack!!!
-     * We depend on them being on the stack to
-     * extract their size in O(1) via sizeof operator.
+     * We depend on them being on the stack to extract
+     * their size in O(1) via the sizeof operator.
      */
     static const char FIZZ_BUZZ[] = "FizzBuzz";
     static const char FIZZ[]      = "Fizz";
