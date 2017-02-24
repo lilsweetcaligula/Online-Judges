@@ -15,7 +15,7 @@ struct ListNode* oddEvenList(struct ListNode* head)
                     evenGroup = { 0 },
                     *oddNode  = &oddGroup,
                     *evenNode = &evenGroup,
-                    *curr	  = head;
+                    *curr     = head;
                     
     int i = 1;
     
