@@ -12,6 +12,7 @@ class Solution(object):
         Note that the head is guaranteed to be not null, so it contains at least one node.
         :type head: ListNode
         """
+        
         self.head  = head
         self.count = 0
         
