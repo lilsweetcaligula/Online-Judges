@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <vector>
 
 class Solution {
 public:
@@ -6,7 +7,7 @@ public:
      * @param A an integer array
      * @return void
      */
-    void sortIntegers(vector<int>& A) 
+    void sortIntegers(std::vector<int>& A) 
     {
         // Bubble sort.
         
